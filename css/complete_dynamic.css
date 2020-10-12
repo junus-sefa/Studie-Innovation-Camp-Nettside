@@ -1,0 +1,213 @@
+body {
+	background-color:#3F4253;
+	margin: 0px; /** Margins removed from body **/
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cat image upper right-hand corner */
+body {
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: scroll;
+}
+
+article{
+	padding: 0 120px;
+}
+
+/*
+The cat pic should be smaller on small screens. This code fixes that.
+By increment!
+This code must come after the general code (I think). It refers to a different, and smaller, picture.
+*/
+@media only screen and (max-width: 900px) { /* Please notice nested '{}' ! */
+	body {
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-attachment: scroll;
+	}
+  
+	article{
+		padding: 0 120px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+  }
+  
+	article{
+		padding: 0 60px;
+	}
+}
+
+/*
+This is to make the image at the bottom of the page scaleable.
+In fact, all 'img'-tags will now scale to 100% — but minus any margins!
+And it may scale *LARGER* than original size.
+*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+/**
+This image would _not_ scale larger than original.
+That's because there is a "max-width" property.
+img {
+    max-width: 100%;
+    height: auto;
+}
+**/
+
+
+/* Dynamic screens: Code below is necessary to make these pages dynamic and adjust to different screen-sizes. */
+* {
+  box-sizing: content-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* This code is needed, though I have forgotten why.*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.top {
+  text-align:center;
+  color:#000;
+  background-color:#fff;
+  padding:30px 0;
+  font-size:25px;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+.menu ul{
+	text-align:center;
+	list-style: none;
+}
+.menu li{
+	display: inline;
+	padding: 0 20px;
+}
+.menu li a{
+	color:#fff;
+}
+.menu li a:hover{
+	opacity:.5;
+}
+
+[class*="col-"] {
+  float:left;
+  padding: 1vw; /* Instead of "Margin", space around anything in a box */
+}
+
+/* phones */
+.col-pho-20 {width: 20%;}
+.col-pho-60 {width: 60%;}
+.col-pho-100 {width: 100%;}
+
+/* tablets */
+@media only screen and (min-width: 600px) {
+.col-tab-10 {width: 10%;}
+.col-tab-20 {width: 20%;}
+.col-tab-40 {width: 40%;}
+.col-tab-60 {width: 60%;}
+.col-tab-80 {width: 80%;}
+.col-tab-100 {width: 100%;}
+}
+
+/* large screens */
+@media only screen and (min-width: 1000px) {
+.col-10 {width: 10%;}
+.col-20 {width: 20%;}
+.col-25 {width: 25%;}
+.col-40 {width: 40%;}
+.col-50 {width: 50%;}
+.col-60 {width: 60%;}
+.col-75 {width: 75%;}
+.col-80 {width: 80%;}
+.col-90 {width: 97%;}
+.col-100 {width: 100%;}
+}
+/* END of dynamic code for different screen-sizes. */
+
+
+h1, h2, h3 {
+	padding:0;
+	margin:0;
+}
+
+th {
+  background-color:rgba(0, 100, 120, 0.8);
+  color:rgba(255, 255, 255, 1);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+}
+
+td {
+  background-color:rgba(240, 240, 240, 1);
+/*  color:rgba(255, 255, 255, 1); */
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+}
+
+
+.tnum {
+  text-align: right;
+}
+
+p {
+  font-family: verdana, helvetica, arial, sans-serif;
+  display: inline-block;
+  width:100%;
+}
+
+.note {
+  padding: 10px;
+  background-color: rgba(243, 243, 144, 0.3)
+}
+
+.overskrift_boks{
+	padding:50px 20px 30px;
+	text-align:center;
+	background-color:#3F4253;
+	color:#fff;
+}
+
+.hoved_boks{
+	background-color:#4C5165;
+	
+}
+
+.hoved_element{
+	color:#fff;
+	text-align:center;
+	line-height:1.8;
+	padding: 10px 30px;
+	
+}
+
+footer{
+	text-align: center;
+	margin: 50px 0px 20px;
+	color:#fff;
+	opacity:.3;
+	font-size: small;
+}
+
+
+
+
