@@ -123,6 +123,16 @@ a{
 .col-tab-60 {width: 60%;}
 .col-tab-80 {width: 80%;}
 .col-tab-100 {width: 100%;}
+.liste_boks{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+	
+}
+.liste_boks li a{
+	width:100%;
+}
 }
 
 /* large screens */
@@ -216,6 +226,7 @@ footer{
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 
@@ -241,5 +252,12 @@ footer{
 .farge4{background-color:#6394C8}
 .farge5{background-color:#9AC863}
 
+.rad{
+	display: flex;
+	flex-wrap: wrap;
+}
 
+.rad .kolonne{
+	flex: 1 0 25%;
+}
 
