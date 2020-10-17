@@ -90,6 +90,11 @@ a{
   font-weight:bold;
 }
 
+.top img{
+	width: auto;
+	max-height: 50px;
+}
+
 .menu ul{
 	text-align:center;
 	list-style: none;
@@ -151,9 +156,16 @@ a{
 /* END of dynamic code for different screen-sizes. */
 
 
-h1, h2, h3 {
-	padding:0;
+h1, h2, h3, h4 {
+	padding:15px 0;
 	margin:0;
+	color:#fff;
+}
+
+h3{
+	text-transform:uppercase;
+	letter-spacing: 1px;
+	font-family: verdana, helvetica, arial, sans-serif;
 }
 
 th {
@@ -183,6 +195,11 @@ p {
   font-family: verdana, helvetica, arial, sans-serif;
   display: inline-block;
   width:100%;
+  line-height:25px;
+}
+
+p.light{
+	color:#fff;
 }
 
 .note {
@@ -191,7 +208,7 @@ p {
 }
 
 .overskrift_boks{
-	padding:50px 20px 30px;
+	padding:30px 20px;
 	text-align:center;
 	background-color:#3F4253;
 	color:#fff;
@@ -199,6 +216,7 @@ p {
 
 .hoved_boks{
 	background-color:#4C5165;
+	margin:40px 0 40px ;
 	
 }
 
@@ -255,9 +273,16 @@ footer{
 .rad{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	padding:20px 10px;
+}
+.rad.sentrert{
+	align-items:center;
+	text-align:center;
 }
 
 .rad .kolonne{
-	flex: 1 0 25%;
+  flex: 1 0 21%; /* explanation below */
+  padding: 0 10px;
 }
 
