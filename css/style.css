@@ -15,34 +15,8 @@ article{
 	padding: 0 120px;
 }
 
-/*
-The cat pic should be smaller on small screens. This code fixes that.
-By increment!
-This code must come after the general code (I think). It refers to a different, and smaller, picture.
-*/
-@media only screen and (max-width: 900px) { /* Please notice nested '{}' ! */
-	body {
-		background-repeat: no-repeat;
-		background-position: right top;
-		background-attachment: scroll;
-	}
-  
-	article{
-		padding: 0 120px;
-	}
-}
 
-@media only screen and (max-width: 700px) {
-  body {
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: scroll;
-  }
-  
-	article{
-		padding: 0 60px;
-	}
-}
+
 
 /*
 This is to make the image at the bottom of the page scaleable.
@@ -71,6 +45,10 @@ img {
 
 a{
 	text-decoration: none;
+	color:#ffc702;
+}
+a:hover{
+	opacity: .5;
 }
 
 /* This code is needed, though I have forgotten why.*/
@@ -110,10 +88,6 @@ a{
 	opacity:.5;
 }
 
-[class*="col-"] {
-  float:left;
-  padding: 1vw; /* Instead of "Margin", space around anything in a box */
-}
 
 /* phones */
 .col-pho-20 {width: 20%;}
@@ -133,7 +107,7 @@ a{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-	
+
 }
 .liste_boks li a{
 	width:100%;
@@ -157,7 +131,7 @@ a{
 
 
 h1, h2, h3, h4 {
-	padding:15px 0 5px 0;
+	padding:15px 0;
 	margin:0;
 	color:#fff;
 }
@@ -217,7 +191,7 @@ p.light{
 .hoved_boks{
 	background-color:#4C5165;
 	margin:40px 0 40px ;
-	
+
 }
 
 .hoved_element{
@@ -225,7 +199,7 @@ p.light{
 	text-align:center;
 	line-height:1.8;
 	padding: 10px 30px;
-	
+
 }
 
 footer{
@@ -255,7 +229,7 @@ footer{
 
 .liste_boks li a{
 	padding:10px 0;
-	color:#fff;	
+	color:#fff;
 	display:block;
 	margin-bottom:20px;
 }
@@ -286,3 +260,40 @@ footer{
   padding: 0 10px;
 }
 
+
+@media only screen and (max-width: 750px) {
+  body {
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+  }
+
+	article{
+		padding: 0;
+	}
+
+	.menu{
+		width:100%;
+		padding: 0;
+	}
+
+	.menu ul{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+   flex-direction: column;
+	 padding: 0;
+	}
+
+	.menu li{
+		padding: 10px 0!important;
+	}
+
+	.overskrift_boks{
+		padding: 0;
+	}
+
+	.kolonne img.sponsor_bilde{
+		height: 40px;
+	}
+}
