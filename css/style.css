@@ -342,6 +342,12 @@ div.banner br {
 
 /* For skjermer mindre enn 750px */
 @media only screen and (max-width: 750px) {
+	body {
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-attachment: scroll;
+	}
+	
 	.menu{
 		width:100%;
 		padding: 0;
