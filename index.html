@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<head>
 
+	<head>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	</head>
 
 	<body>
@@ -13,37 +12,90 @@
 			<div class="top">
 				<img alt="logo" src="images/logo_sizefit.png">
 			</div>
-			<div class="row">
-			<section>
-				<div class="col-90 menu">
-					<ul>
-						<li><a href="#hjem">Hjem</a></li>
-						<li><a href="#omoss">Om Oss</a></li>
-						<li><a href="#doner">Doner</a></li>
-						<li><a href="#hvordan">Hvordan fungerer det?</a></li>
-						<li><a href="#partnere">Partnere</a></li>
-					</ul>
-				</div>
-			</section>
-			<section>
-				<picture>
-					<a href="#omoss">
-						<img alt="hovedbanner" src="images/top_banner.jpg" alt="topp banner">
-					</a>
-				</picture>
-			</section>
-			<section id="omoss">
-				<div class="overskrift_boks">
-					<h2>Om Oss</h2>
-				</div>
-				<div class="hoved_boks">
-					<div class="hoved_element">
-						<p>What is needed in any discussion like this, is to ensure that we know what we compare and are honest about it. When we compare languages, there may in fact be a number of skills in addition to the programming langugage. For example, if you know Go, you probably now a bit about scaleable network servers as well.</p>
-						<p>When we compare pay among genders within academia, we may overlook issues that begins much earlier: <a href="https://www.theguardian.com/world/2020/jul/20/teenage-boys-academic-ambition-may-explain-gender-pay-gap-study-says">which subjects men and women study – and where they study</a>. </p>
+
+				<!-- Meny - Sekjson -->
+				<section>
+					<div class="menu">
+						<ul>
+							<li><a href="#hjem">Hjem</a></li>
+							<li><a href="#omoss">Om Oss</a></li>
+							<li><a href="#doner">Doner</a></li>
+							<li><a href="#hvordan">Hvordan fungerer det?</a></li>
+							<li><a href="#partnere">Partnere</a></li>
+						</ul>
 					</div>
-				</div>
-			</div>
+				</section>
+
+				<!-- Banner - Sekjson -->
+				<section>
+					<div class="banner">
+						<!-- Første element -->
+						<div class="boks1">
+							<p>
+								<span class="str2"><span class="rosa">Sammen</span> kan vi<br>
+								gjøre en stor</span><br>
+								<span class="rosa str3">forskjell!</span>
+							</p>
+						</div>
+						<!-- Andre element -->
+						<div class="boks2">
+							<div class="boks2-1">
+								<p>
+									<span class="str2">28%</span><br>
+									<span class="str1">starter på VGS</span>
+								</p>
+							</div>
+							<!-- Tredje element -->
+							<div class="boks2-2">
+								<p>
+									<span class="str2">1 av 5</span><br>
+									<span class="str1">starter ikke på skolen</span>
+								</p>
+							</div>
+							<!-- Fjerde element -->
+							<div class="boks2-3">
+								<p>
+									<span class="str2">9%</span><br>
+									<span class="str1">av barn med nedsatt<br>
+									funksjonsevne, går på<br>
+									barneskole</span>
+								</p>
+							</div>
+							<!-- Femte element -->
+							<div class="boks2-4">
+								<p>
+									<span class="str2">13.4%</span><br>
+									<span class="str1">innskrevet i viktig<br>
+									førskoleutdanning</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="omoss">
+					<div class="overskrift_boks">
+						<h2>Om Oss</h2>
+					</div>
+					<div class="hoved_boks">
+						<div class="hoved_element">
+							<p>
+								Altfor mange barn i verden mangler utdanning. Manglende utdanningstilbud, lang og farlig skolevei,
+								eller at barnet holdes hjemme for å arbeide, er bare noen av grunnene. For å kunne gjøre noe med
+								problemet, trenger vi kunnskap om <i>hvorfor</i> barn ikke kommer på skolen.
+							</p>
+							<p>
+								Vi har derfor utviklet appen <i>Stay</i> som skal hjelpe lærere på skoler i utviklingsland med å
+								loggføre barnas fravær, samt årsaken til fravær. Denne innformasjonen blir anonymisert og sendt til
+								Redd Barna, slik at de kan bruke denne kunnskapen for å beslutte hvor ressursene skal settes inn.
+								En mobil med appen innsallert deles ut til lærerne slik at flest mulig områder blir dekket uten
+								at lærerne eller elevene trenger å ha råd til å kjøpe egen mobiltelefon.
+							</p>
+						</div>
+					</div>
 			</section>
+
+			<!-- Doner - Sekjson -->
 			<section id="doner">
 				<div class="overskrift_boks">
 					<h2>Doner</h2>
@@ -51,17 +103,19 @@
 				<div class="hoved_boks">
 					<div class="hoved_element">
 						<ul class="liste_boks">
-							<li><a class="farge1" href="#">Bankoverføring</a></li>
-							<li><a class="farge4" href="#">Klarna</a></li>
-							<li><a class="farge2" href="#">Vipps</a></li>
-							<li><a class="farge3" href="#">Avtalegiro</a></li>
-							<li><a class="farge5" href="#">Visa eller Mastercard</a></li>
+							<li><a class="farge1" target="_blank" href="https://www.dnb.no/kundeservice/privat/betaleogoverfore.html">Bankoverføring</a></li>
+							<li><a class="farge4" target="_blank" href="https://www.klarna.com/no/">Klarna</a></li>
+							<li><a class="farge2" target="_blank" href="https://www.vipps.no/">Vipps</a></li>
+							<li><a class="farge3" target="_blank" href="https://www.avtalegiro.no/Privat">Avtalegiro</a></li>
+							<li><a class="farge5" target="_blank" href="https://www.visa.no/">Visa eller Mastercard</a></li>
 						</ul>
 						<p><i>Vi setter pris på din donasjon!</i></p>
 					</div>
 				</div>
 			</div>
 			</section>
+
+			<!-- Hvordan det fungerer - Sekjson -->
 			<section id="hvordan">
 				<div class="overskrift_boks">
 					<h2>Hvordan fungerer det?</h2>
@@ -91,6 +145,8 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- Partnere - Sekjson -->
 			<section id="partnere">
 				<div class="hoved_boks">
 					<div class="rad sentrert">
@@ -104,9 +160,11 @@
 				</div>
 			</section>
 		</article>
-		<footer>
-			<p>copyright © 2020 Stay</p>
-		</footer>
-	</body>
 
+		<!-- Footer -->
+		<footer>
+			<p>Copyright © 2020 Stay</p>
+		</footer>
+
+	</body>
 </html>
